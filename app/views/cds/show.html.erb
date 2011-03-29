@@ -1,0 +1,12 @@
+<% title "Cd" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @cd.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_cd_path(@cd) %> |
+  <%= link_to "Destroy", @cd, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", cds_path %>
+</p>

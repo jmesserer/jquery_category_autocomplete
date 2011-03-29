@@ -1,0 +1,26 @@
+<% title "Cds" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for cd in @cds %>
+    <tr>
+      <td><%= link_to cd.name, cd %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= content_tag "h1", "Songs" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for song in @songs %>
+    <tr>
+      <td><%= link_to song.name, song %></td>
+    </tr>
+  <% end %>
+</table>
+<p><%= link_to "New Cd", new_cd_path %></p>

@@ -1,0 +1,8 @@
+<% form_for @cd do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name, :value => "CD#{Cd.all.size + 1}"%>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
